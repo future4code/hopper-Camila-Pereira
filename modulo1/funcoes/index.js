@@ -38,13 +38,11 @@ iii) true
 //   console.log(`Eu sou Camila, tenho 37 anos, moro em São Paulo e sou estudante.`)
 //}
 //perguntas()
-
 const perguntas = () => {
     const respondendo = " Eu sou Camila, tenho 37 anos, moro em São Paulo e sou estudante. "
     return respondendo
 }
 console.log(perguntas())
-
 // b
 
 const receberQuatroParametros = (nome, idade, endereco, profissao) => {
@@ -90,7 +88,7 @@ const funcaoString = (mensagem) => {
 console.log(funcaoString("We are love"))
 console.log(funcaoString("We are love").length)
 
-//e)
+//3
 
 const soma = (num1, num2) => {
     let somando = num1 + num2
@@ -119,3 +117,18 @@ console.log(`A soma dos numeros fica ${soma(valor1, valor2)}.
 A subtracao dos numeros fica ${subt(valor1, valor2)}.
 A multiplicacao dos numeros fica ${mult(valor1, valor2)}.
 A divisao dos numeros fica ${div(valor1, valor2)}  `)
+
+//Desafios
+
+//1 -
+
+//a
+
+const parametro = (parametro1) => 
+console.log(parametro1)
+
+//b
+
+const outroParametro = (param1, param2) =>
+    param1 + param2;
+parametro(outroParametro(23, 41))

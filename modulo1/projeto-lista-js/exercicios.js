@@ -131,29 +131,20 @@ return string1.toUpperCase() === string2.toUpperCase()
 // EXERCÍCIO 13
 function checaRenovacaoRG() {
   // implemente sua lógica aqui
-const anoHoje = Number(prompt("Qual ano estamos?"))
-const anoNascimento = Number(prompt("Qual ano do seu nascimento?"))
-const anoID = Number(prompt("Qual ano de emissao do seu RG?"))
-const idade =  anoHoje - anoNascimento
-//console.log(idadeAtual)
-const anoEmissaoRg = anoHoje - anoID
-const calcularRg = (anoHoje - anoID) >= anoEmissaoRg
-const renova = true
-
-if(anoID < idade && idade <= 20){
-  //return "Voce deve renovar sua carteira de 5 em 5 anos"
- 
- console.log()
-}
-else if(idade >= 20 && idade <= 50 ){
-  console.log( "Voce deve renovar sua carteira de 10 em 10 anos")
+  function checaRenovacaoRG() {
+    // implemente sua lógica aqui
+    const anoAtual = Number(prompt("Informe o ano atual:"));
+    const anoNascimento = Number(prompt("Informe o ano em que você nasceu:"));
+    const anoEmissaoRG = Number(prompt("Informe o ano em que seu RG foi emitido:"));
   
-}else{
-  console.log("Para pessoas acima dos 50 anos, deve ser renovada de 15 em 15 anos")
+    const idadePessoa = anoAtual - anoNascimento;
+    const idadeRG = anoAtual - anoEmissaoRG
   
-} console.log(calcularRg && renova )
-}
-
+    const premissa1 = idadePessoa <= 20 && idadeRG >= 5;
+    const premissa2 = (idadePessoa >= 20 && idadePessoa <= 50) && idadeRG >= 10;
+    const premissa3 = idadePessoa > 50 && idadeRG > 15;
+  
+    console.log(premissa1, premissa2, premissa3);
 
 
 // EXERCÍCIO 14
