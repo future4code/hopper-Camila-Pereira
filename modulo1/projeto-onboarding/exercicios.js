@@ -78,8 +78,6 @@ function retornaStringEmMaiuscula(string) {
 // EXERCÍCIO 07
 function calculaIngressosEspetaculo(custo, valorIngresso) {
   // implemente sua lógica aqui
-
-
 return custo / valorIngresso
 }
 
@@ -92,106 +90,41 @@ return string1.length == string2.length
 // EXERCÍCIO 09
 function retornaPrimeiroElemento(array) {
   // implemente sua lógica aqui
-
-return array[0]
-
+return 
 }
 
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
   // implemente sua lógica aqui
-const lastElement = array[array.length - 1]
-console.log(lastElement)
 
-return lastElement
 }
 
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
   // implemente sua lógica aqui
 
-  //array reserva vira primeiro array
-let arrayReserva = array[0] 
-  // primeiro array vira ultimo
-array[0]= array[array.length-1]
- //entao array ultimo vira primeiro
-array[array.length -1] = arrayReserva
-console.log(array)
-
-return array
-
 }
 
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
   // implemente sua lógica aqui
-return string1.toUpperCase() === string2.toUpperCase()
+
 }
 
 // EXERCÍCIO 13
 function checaRenovacaoRG() {
   // implemente sua lógica aqui
 
-  function checaRenovacaoRG() {
-    // implemente sua lógica aqui
-    const anoAtual = Number(prompt("Informe o ano atual:"));
-    const anoNascimento = Number(prompt("Informe o ano em que você nasceu:"));
-    const anoEmissaoRG = Number(prompt("Informe o ano em que seu RG foi emitido:"));
-  
-    const idadePessoa = anoAtual - anoNascimento;
-    const idadeRG = anoAtual - anoEmissaoRG
-  
-    const premissa1 = idadePessoa <= 20 && idadeRG >= 5;
-    const premissa2 = (idadePessoa >= 20 && idadePessoa <= 50) && idadeRG >= 10;
-    const premissa3 = idadePessoa > 50 && idadeRG > 15;
-  
-    console.log(premissa1, premissa2, premissa3);
-  
-    const anoHoje = Number(prompt("Digite o ano que estamos hoje:"))
-    const anoNasc = Number(prompt("Digite o ano em que você nasceu:"))
-    const anoRG = Number(prompt("Digite o ano da emissao do seu RG:"))
-  
-    const idadePessoa = anoHoje - anoNasc
-    const idadeRG = anoHoje - anoRG
-  
-   const idadeUm = idadePessoa <= 20 && idadeRG >= 5
-   const idadeDois = (idadePessoa >= 20 && idadePessoa <= 50) && idadeRG >= 10
-   const idadeTres = idadePessoa > 50 && idadeRG > 15
- 
-   console.log(idadeUm || idadeDois || idadeTres)
 }
-
-
 
 // EXERCÍCIO 14
 function checaAnoBissexto(ano) {
   // implemente sua lógica aqui
 // calculo e comparacao em uma linha so 
-
-
-let divisivelpor4 = ano % 4 === 0;
-let naoDivisivelpor100 = ano % 100 !== 0;
-let divisivelpor400 = ano % 400 === 0;
-
-return (divisivelpor4 && naoDivisivelpor100) || divisivelpor400;
-
 }
 
 // EXERCÍCIO 15
 function checaValidadeInscricaoLabenu() {
   // implemente sua lógica aqui
 
-
 }
-
-  const maiorDe18 = prompt("Você tem mais de 18 anos?")
-  const ensinoMedio = prompt("Você possui ensino médio completo?")
-  const disponibilidade = prompt("Você possui disponibilidade exclusiva durante os horários do curso?")
-  let sim = "sim"
-
- 
-   console.log((maiorDe18 == sim) && (ensinoMedio == sim) && (disponibilidade == sim) )
-   
-  }
-  
-
