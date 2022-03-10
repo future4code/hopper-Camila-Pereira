@@ -131,6 +131,21 @@ return string1.toUpperCase() === string2.toUpperCase()
 // EXERCÍCIO 13
 function checaRenovacaoRG() {
   // implemente sua lógica aqui
+
+  function checaRenovacaoRG() {
+    // implemente sua lógica aqui
+    const anoAtual = Number(prompt("Informe o ano atual:"));
+    const anoNascimento = Number(prompt("Informe o ano em que você nasceu:"));
+    const anoEmissaoRG = Number(prompt("Informe o ano em que seu RG foi emitido:"));
+  
+    const idadePessoa = anoAtual - anoNascimento;
+    const idadeRG = anoAtual - anoEmissaoRG
+  
+    const premissa1 = idadePessoa <= 20 && idadeRG >= 5;
+    const premissa2 = (idadePessoa >= 20 && idadePessoa <= 50) && idadeRG >= 10;
+    const premissa3 = idadePessoa > 50 && idadeRG > 15;
+  
+    console.log(premissa1, premissa2, premissa3);
   
     const anoHoje = Number(prompt("Digite o ano que estamos hoje:"))
     const anoNasc = Number(prompt("Digite o ano em que você nasceu:"))
@@ -147,20 +162,28 @@ function checaRenovacaoRG() {
 }
 
 
+
 // EXERCÍCIO 14
 function checaAnoBissexto(ano) {
   // implemente sua lógica aqui
 // calculo e comparacao em uma linha so 
+
+
 let divisivelpor4 = ano % 4 === 0;
 let naoDivisivelpor100 = ano % 100 !== 0;
 let divisivelpor400 = ano % 400 === 0;
 
 return (divisivelpor4 && naoDivisivelpor100) || divisivelpor400;
+
 }
 
 // EXERCÍCIO 15
 function checaValidadeInscricaoLabenu() {
   // implemente sua lógica aqui
+
+
+}
+
   const maiorDe18 = prompt("Você tem mais de 18 anos?")
   const ensinoMedio = prompt("Você possui ensino médio completo?")
   const disponibilidade = prompt("Você possui disponibilidade exclusiva durante os horários do curso?")
@@ -171,3 +194,4 @@ function checaValidadeInscricaoLabenu() {
    
   }
   
+
