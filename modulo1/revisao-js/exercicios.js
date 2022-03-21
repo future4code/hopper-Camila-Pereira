@@ -157,16 +157,85 @@ function retornaPessoaAnonimizada(pessoa) {
 }
 
 // EXERCÍCIO 13A
-function retornaPessoasAutorizadas(pessoas) {}
+function retornaPessoasAutorizadas(pessoas) {
+  let pessoasComPermissao = [];
+  let pessoasSemPermissao = [];
+  for (let pessoa of pessoas) {
+    if (pessoa.altura >= 1.5 && pessoa.idade > 14 && pessoa.idade < 60) {
+      pessoasComPermissao.push(pessoa);
+    } else {
+      pessoasSemPermissao.push(pessoa);
+    }
+  }
+  return pessoasComPermissao;
+}
 
 // EXERCÍCIO 13B
-function retornaPessoasNaoAutorizadas(pessoas) {}
+function retornaPessoasNaoAutorizadas(pessoas) {
+  let pessoasComPermissao = [];
+  let pessoasSemPermissao = [];
+  for (let pessoa of pessoas) {
+    if (pessoa.altura >= 1.5 && pessoa.idade > 14 && pessoa.idade < 60) {
+      pessoasComPermissao.push(pessoa);
+    } else {
+      pessoasSemPermissao.push(pessoa);
+    }
+  }
+  return pessoasSemPermissao;
+}
 
 // EXERCÍCIO 14
-function retornaContasComSaldoAtualizado(contas) {}
+function retornaContasComSaldoAtualizado(contas) {
+  contas.map(function (item) {
+    let saldoCliente = item.compras.reduce(
+      (accumulator, value) => accumulator + value,
+      0
+    );
+    item.saldoTotal -= saldoCliente;
+    item.compras = [];
+  });
+
+  return contas;
+}
+//second try //
+
+//   for (let conta of contas) {
+//     for (let compra of conta.compras) {
+//       conta.saldoTotal -= compra
+//       conta.compras = [];
+//     }
+//   }
+//   return contas;
+// }
+
+//let copia = [...contas, (saldoTotal = saldoCliente)];
 
 // EXERCÍCIO 15A
-function retornaArrayOrdenadoAlfabeticamente(consultas) {}
+function retornaArrayOrdenadoAlfabeticamente(consultas) {
+  const sorted = consultas.sort((name1, name2) => {
+    if (name1.nome < name2.nome) {
+      return -1;
+    }
+    if (name1.nome > name2.nome) {
+      return 1;
+    } else {
+      return 0;
+    }
+  });
+  return sorted;
+}
+// second try //
+
+// const sorted = consultas.sort((a, b) => {
+//   return a.localeCompare(b);
+// });
 
 // EXERCÍCIO 15B
-function retornaArrayOrdenadoPorData(consultas) {}
+function retornaArrayOrdenadoPorData(consultas) {
+  consultas.sort((x, y) => {
+    x = x.dataDaConsulta.split("/").reverse().join();
+    y = y.dataDaConsulta.split("/").reverse().join();
+    return x.localeCompare(y);
+  });
+  return consultas;
+}
