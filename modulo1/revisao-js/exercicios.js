@@ -23,22 +23,12 @@ function retornaNumerosPares(array) {
 }
 
 // EXERCÍCIO 05
+
 function retornaNumerosParesElevadosADois(array) {
   let pares = array.filter((num) => num % 2 === 0);
   let resultado = pares.map((num) => num ** 2);
   return resultado;
 }
-
-//second try //
-// let par
-// let elevadoADois = [];
-// for (i = 0; i <= array.length; i++) {
-//   if (array[i] % 2 == 0) {
-//     elevadoADois.push(array[i] * array[i]);
-//   }
-// }
-// return elevadoADois;
-//}
 
 // EXERCÍCIO 06
 function retornaMaiorNumero(array) {
@@ -86,11 +76,6 @@ function retornaNPrimeirosPares(n) {
     }
   }
   return maior;
-
-  //second try//
-  // let newArray = n.filter((num) => num % 2 === 0);
-  // let primeirosPares = newArray.map((num) => num.length);
-  // return primeirosPares;
 }
 
 // EXERCÍCIO 09
@@ -121,20 +106,6 @@ function retornaSegundoMaiorESegundoMenor(array) {
 
   array2.push(segundoMaior, segundoMenor);
   return array2;
-
-  // second try//
-  // for (let i = 0; i < array.length; i++) {
-  //   let terceiroCopo = array[i];
-
-  //    array[array.lenght - 2]) {
-  //     segundoMenor = terceiroCopo;
-  //   }
-  //   if (terceiroCopo > array[1]) {
-  //     segundoMaior = terceiroCopo;
-  //   }
-  // }
-  // array2.push(segundoMaior, segundoMenor);
-  // return array2;
 }
 
 // EXERCÍCIO 11
@@ -197,18 +168,6 @@ function retornaContasComSaldoAtualizado(contas) {
 
   return contas;
 }
-//second try //
-
-//   for (let conta of contas) {
-//     for (let compra of conta.compras) {
-//       conta.saldoTotal -= compra
-//       conta.compras = [];
-//     }
-//   }
-//   return contas;
-// }
-
-//let copia = [...contas, (saldoTotal = saldoCliente)];
 
 // EXERCÍCIO 15A
 function retornaArrayOrdenadoAlfabeticamente(consultas) {
@@ -224,11 +183,6 @@ function retornaArrayOrdenadoAlfabeticamente(consultas) {
   });
   return sorted;
 }
-// second try //
-
-// const sorted = consultas.sort((a, b) => {
-//   return a.localeCompare(b);
-// });
 
 // EXERCÍCIO 15B
 function retornaArrayOrdenadoPorData(consultas) {

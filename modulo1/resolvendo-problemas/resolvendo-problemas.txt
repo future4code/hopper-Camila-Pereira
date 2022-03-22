@@ -1,0 +1,10 @@
+7 principais passos para resolver problemas na programacao
+
+1- atencao no enunciado
+2- retirar informacoes importantes 
+3- pensar nas entradas e saidas
+4- fazer um esquema visual
+5- criar codigo feio depois montar certo
+6- testar forca bruta, console.log todas etapas
+7- refatorar, deixar o codigo mais legivel.
+
