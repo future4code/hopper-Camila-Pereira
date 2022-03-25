@@ -1,0 +1,79 @@
+/* Pagina inicial 
+ */
+body {
+  background-image: radial-gradient(#cfb4cb, #664460);
+  background-repeat: no-repeat;
+  background-position: fixed;
+
+  width: 75%;
+  min-height: 100vh;
+  margin: 20vh auto;
+  text-align: center;
+  font-family: Helvetica, Sans-Serif;
+  box-shadow: -0.5px 3px 15px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  color: rgb(10, 10, 10);
+  font-weight: 600;
+}
+
+table {
+  width: 100%;
+  height: 100vh;
+  border-radius: 0.5vw;
+  padding: 1vw;
+}
+
+th {
+  padding: 0.1vw;
+  background-color: #333;
+  color: rgb(160, 177, 180);
+}
+
+td {
+  padding: 1.5vh;
+}
+
+img {
+  max-width: 560px;
+}
+img:hover {
+  opacity: 0.75;
+}
+.corpo-index {
+  background-color: #664460;
+  color: #777;
+  text-shadow: 1px 1px 1px #1e2021;
+}
+
+.titulo-index {
+  text-align: center;
+}
+
+.links-index {
+  text-align: center;
+  border: rgb(31, 30, 30) 3px solid;
+  padding: 10px 25px;
+  margin-right: 100px;
+  margin-left: 100px;
+  border-radius: 50px;
+}
+a:link {
+  text-decoration: none;
+  color: black;
+}
+tr {
+  background-color: #664460;
+  box-shadow: 2px;
+}
+.footer {
+  background-color: #333;
+}
+
+.footer td {
+  padding: 5vh;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #adb3af;
+}
