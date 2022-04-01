@@ -1,7 +1,10 @@
 * {
-  margin: 0px;
+  box-sizing: border-box;
   padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
 }
+/* header */
 
 header {
   background-color: mediumvioletred;
@@ -9,14 +12,14 @@ header {
   justify-content: space-between;
   height: 50px;
   align-items: center;
-  padding: 0 10px;
-  position: fixed;
+  padding: 10px, 0;
   top: 0px;
   width: 100%;
   font-weight: bolder;
+  position: relative;
 }
 
-img {
+.header-img {
   width: 5vh;
   height: 5vh;
   padding-top: 5px;
@@ -25,15 +28,54 @@ img {
   display: flex;
   justify-content: space-between;
 }
-h1 {
-  padding-top: 20px;
+.logo h1 {
+  padding: 20px;
   font-size: large;
+}
+.logo img {
+  padding-top: 15px;
 }
 .btn {
   width: 50px;
   height: 25px;
 }
-.container-bolos {
+
+/* MENU LATERAL*/
+
+.container-left {
   display: flex;
-  align-items: stretch;
+  flex-direction: column;
+}
+.menu-lateral {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: flex-start;
+  flex-grow: 0.5;
+}
+.menu-lateral img {
+  width: 5vh;
+  height: 5vh;
+  padding-top: 5px;
+}
+.menu-lateral {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 0px;
+}
+.menu-lateral h1 {
+  font-size: 15px;
+  display: inline-block;
+  padding-top: 10px;
+}
+
+/* CONTAINER PRINCIPAL */
+
+.container-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: yellow;
+  flex-wrap: wrap;
 }
