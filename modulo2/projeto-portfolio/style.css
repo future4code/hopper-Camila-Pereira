@@ -1,0 +1,128 @@
+*{
+    
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+  background-image: url(../projeto-portfolio/img/CamilaDonda.png);
+  width: 100%;
+  
+}
+/* CONTAINER GRID */
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+
+}
+
+
+
+/* ===== NAV BAR ===== */
+
+.item1-header{
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 1;
+ border-bottom: 1px solid black;
+ margin-top: 20px;
+
+ justify-content:right;
+ left:10%;
+}
+
+ul {
+  list-style-type: none;
+ 
+  padding: 0;
+  overflow: hidden;
+  float: right;
+}
+
+li {
+  float: left;
+
+}
+
+li a {
+  display: block;
+  padding: 20px;
+  color: rgb(22, 20, 20);
+  text-decoration: none;
+  text-shadow: 0.1em 0.1em 0.4em black;
+  text-align: left;
+ 
+}
+
+
+/* ======== MAIN SECTION ======= */
+
+.item2-main{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: row1-start;
+  grid-row-end: 2;
+  align-self: center;
+  justify-self:start;
+  margin: 0;
+   
+}
+
+.main-text{
+  font-size: 30px;
+}
+.vertical{
+  border-left: 1px solid black;
+            height: 400px;
+            position:absolute;
+            left: 50%;
+            margin-top: 20px;
+}
+.color1{
+  text-shadow: 0.1em 0.1em 0.2em rgb(143, 23, 23);
+}
+.color2{
+  text-shadow: 0.1em 0.1em 0.2em rgb(11, 4, 109);
+}
+/* SECTION - photo */
+
+.item3-foto{
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+
+}
+.img-perfil{
+  width: 40%;
+  height: 40%;
+float: right;
+ border-radius: 50%;
+}
+
+/* FOOTER */
+
+
+.item4-footer {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 4;
+}
+.menu-develop{
+  font-size: 15px;
+  font-family: sans-serif;
+  border-top: 1px solid black;
+  text-align:center;
+  
+}
+ .menu-develop a{
+  color:black;
+  text-decoration: none;
+  text-decoration: underline;
+ }
