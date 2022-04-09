@@ -1,5 +1,7 @@
 *{
-    font-family: fantasy;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    font-size: 2vh;
 }
 /* === header === */
 
@@ -31,11 +33,10 @@ header, footer{
 
     .video{
         text-align: center;
-        border: 2px solid black;
         padding-bottom: 20px;
-        width: 100%;
-        min-width: 300px;
-        
+        margin: 0px 20px;
+     width: 100%;
+     
     }
 
     /* === footer === */
