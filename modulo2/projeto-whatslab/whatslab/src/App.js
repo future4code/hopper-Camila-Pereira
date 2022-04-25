@@ -1,4 +1,5 @@
 import './App.css';
+import ItemNav from './components/ItemNAv';
 
 function App() {
   const reproduzVideo = () => {
@@ -15,12 +16,19 @@ function App() {
         <main>
           <nav className="menu-vertical">
             <ul>
-              <li className="botoes-meunu-vertical">Início</li>
+              <ItemNav />
+              <ItemNav />
+              <ItemNav />
+              <ItemNav />
+              <ItemNav />
+              <ItemNav />
+
+              {/* <li className="botoes-meunu-vertical">Início</li>
               <li className="botoes-meunu-vertical">Em alta</li>
               <li className="botoes-meunu-vertical">Inscrições</li>
               <hr />
               <li className="botoes-meunu-vertical">Originais</li>
-              <li className="botoes-meunu-vertical">Histórico</li>
+              <li className="botoes-meunu-vertical">Histórico</li> */}
             </ul>
           </nav>
 
