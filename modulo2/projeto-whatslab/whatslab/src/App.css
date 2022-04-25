@@ -1,0 +1,162 @@
+.App {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  
+}
+
+
+.tela-inteira {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  height: 10%;
+}
+
+main {
+  min-height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-vertical {
+  flex-basis: 200px;
+  border-right-style: solid;
+  border-right-width: thin;
+}
+
+.botoes-meunu-vertical {
+  list-style-type: none;
+}
+
+.painel-de-videos {
+  padding: 20px 20px;
+  flex-grow: 2;
+  display: grid;
+  flex-wrap: wrap;
+  
+  grid-template-rows: repeat(4, 270px 20px);
+}
+
+.media1 {
+  grid-column-start: 1;
+  grid-row-start: 1;
+
+}
+
+.media2 {
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+.media3 {
+  grid-column-start: 5;
+  grid-row-start: 1;
+}
+
+.media4 {
+  grid-column-start: 7;
+  grid-row-start: 1;
+}
+
+.media5 {
+  grid-column-start: 1;
+  grid-row-start: 3;
+}
+
+.media6 {
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+
+.media7 {
+  grid-column-start: 5;
+  grid-row-start: 3;
+}
+
+.media8 {
+  grid-column-start: 7;
+  grid-row-start: 3;
+}
+
+
+.box-pagina-principal {
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  grid-template-columns: auto-fill 1fr;
+  border-style: solid;
+  border-width: thin; 
+  align-items: start;
+  justify-items: stretch;
+  grid-gap: 10px;
+}
+
+footer {
+  position: fixed;
+  background: #1F1F24;
+  width: 100%;
+  height:100px;
+  bottom: 0;
+  left:0;
+ 
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 110px;
+  height: 1px;
+  width: 100%;
+  background: #fff;
+}
+
+footer .content {
+  max-width: 1250px;
+  margin: auto;
+  padding-top: 10px;
+}
+
+footer .content .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+footer .content .logo-details p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+footer h4 {
+  text-align: center;
+  padding-bottom: 20px;
+  color: #fff;
+}
+.box-pagina-principal > img {
+  width: 100%;
+  height: 200px;
+}
+
+h4 {
+  margin-left: 20px;
+}
+
+
+
+
